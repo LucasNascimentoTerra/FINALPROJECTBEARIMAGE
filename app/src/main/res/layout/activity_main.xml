@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Width"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGenerateImage"
+        app:layout_constraintEnd_toStartOf="@+id/editTextHeight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonGenerateImage"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBear" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Height"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGenerateImage"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGenerateImage"
+        app:layout_constraintStart_toEndOf="@+id/editTextWidth"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBear" />
+
+    <Button
+        android:id="@+id/buttonGenerateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Image"
+        android:background="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+
+    <Button
+        android:id="@+id/buttonList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/brown"
+        android:text="Show All Generated"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:contentDescription="image of a bear"
+        android:id="@+id/imageViewBear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bears" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
